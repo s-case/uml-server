@@ -28,6 +28,7 @@ The second part is the image file for recognition.
 
 The response is an XMI String describing the UML activity diagram. An example of such file is the following:
 
+```xml
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="117f8da6559fc542-1bff275a-4728-8aed-488f8228480e831b5fa68d10" name="model">
   <packagedElement xmi:type="uml:Activity" xmi:id="4db52e102e47ceec-17d183b5-46e9-ae96-2d778f0935cd788b605ff728" name="Activity" node="28fa183f647ae05-3f382155-4ba7-bf46-5f9a0b8f1f78f1b05c37b6cf 4e61f34810463b15-1ae0e915-4ae4-a32b-70f12a9d5f5e227241a58b03 528797b0721399a-706c7d89-4680-99fd-6a24cf84606c552b246f55b4 6ea61ee06a59f4ab-7073ee5e-48e3-b144-602db3494460cfce1467967e 229f467512824e17-30f87f94-4b3a-b655-29d745f9e576db120563fe7">
     <edge xmi:type="uml:ControlFlow" xmi:id="2d7f697e7f7d3f08-2b7bc91b-4079-a96b-278cd3e2336eddb132e32130" name="Select a to report" coordinates="(123,35) (121,98) (120,99) (117,95) (120,101) (123,101) (126,95) (124,99) (122,99) (123,35)" target="4e61f34810463b15-1ae0e915-4ae4-a32b-70f12a9d5f5e227241a58b03" source="28fa183f647ae05-3f382155-4ba7-bf46-5f9a0b8f1f78f1b05c37b6cf"/>
@@ -41,6 +42,7 @@ The response is an XMI String describing the UML activity diagram. An example of
     <node xmi:type="uml:ActivityFinalNode" xmi:id="229f467512824e17-30f87f94-4b3a-b655-29d745f9e576db120563fe7" name="ActivityFinalNode" coordinates="(112,508) (107,515) (108,524) (115,529) (124,528) (129,521) (128,512) (122,507) (112,508)" incoming="6ea61ee06a59f4ab-7073ee5e-48e3-b144-602db3494460cfce1467967e" />
   </packagedElement>
 </uml:Model>
+```
 
 # UML Server Use Case Diagrams [/usecase]
 This is the end point for use case UML diagrams. Any use case diagram to be transformed should use this endpoint with MultiPart POST.
@@ -48,6 +50,7 @@ The request parameters of the MultiPart POST are the same as for activity diagra
 
 An example of the response for use case diagrams is the following:
 
+```xml
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="63aa4ef357cf3a7e-52ef3ae1-4a03-afca-83ffaae1fccbd736fda23e9" name="model">
   <packagedElement xmi:type="uml:Use Case" xmi:id="8b7996f2e554cc-3e1f937b-46f8-8e44-72a14b8a65039d1f7cb7a30d" name="Use Case" node="608c3ac93ae8266-2f650075-4e97-8c6b-2b6fbbff50e4b106534cbe99 5d42718629d33a57-76281741-41a3-8e9c-5d823dc947716b1035560f6c 3c874b5a62478737-62b905b-47a7-ad7d-5f1927f83bf7b85f7656c429 6de70a22524d42b-47621f9-4136-abc8-c79f93222360c07ba34acb 5639b9394b7e47f1-6f7be9d9-4886-b873-d3462a129c8682b7feaa4ef">
     <edge xmi:type="uml:SolidLineFlow" xmi:id="346144c676b3a4c1-2abe99c5-462c-b380-119577e544bc289e2645c0b2" name="CityA Resources sharing Sharing management" coordinates="(177,270) (243,329) (248,332) (182,273) (177,270) (177,270) (248,332)" target="5639b9394b7e47f1-6f7be9d9-4886-b873-d3462a129c8682b7feaa4ef" source="3c874b5a62478737-62b905b-47a7-ad7d-5f1927f83bf7b85f7656c429"/>
@@ -61,3 +64,4 @@ An example of the response for use case diagrams is the following:
     <node xmi:type="uml:UseCaseNode" xmi:id="5639b9394b7e47f1-6f7be9d9-4886-b873-d3462a129c8682b7feaa4ef" name="Sharing management" coordinates="(139,363) (139,368) (143,372) (162,380) (204,388) (253,392) (317,392) (366,388) (408,380) (422,375) (431,368) (431,363) (427,359) (408,351) (366,343) (318,339) (252,339) (204,343) (162,351) (146,357) (139,363)" connectedSolid="3c874b5a62478737-62b905b-47a7-ad7d-5f1927f83bf7b85f7656c429 6de70a22524d42b-47621f9-4136-abc8-c79f93222360c07ba34acb" connectedDashed="" incomingSolid="" outgoingSolid="" incomingDashed="" outgoingDashed=""/>
   </packagedElement>
 </uml:Model>
+```
